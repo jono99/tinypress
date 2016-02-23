@@ -1,0 +1,49 @@
+
+* {outline:none!important;}
+
+/*----------  Imports  ----------*/
+
+	@import "css/less/bootstrap/bootstrap.less";
+	
+	@import "css/less/type";
+	@import "css/less/forms";
+
+	@import "css/less/header";
+
+/*----------  Globals  ----------*/
+
+#__bs_notify__ {
+	top: 50% !important;
+	padding: 10px !important;
+	border-radius: 5px 0 0 5px !important;
+	font-size:12px!important;
+	letter-spacing: 0;
+}
+
+[data-bg] {
+	background-size: cover;
+	background-position: center center;
+}
+
+.container {
+	max-width: none;
+	width: 100%;
+	padding: 0;
+	
+	> .row {
+		max-width: 1200px;
+		margin: auto;
+		
+		img {
+			.img-responsive();
+		}
+	}
+}
+
+/*----------  Image Alignment  ----------*/
+
+	.alignright {float: right;}
+	.alignleft {float: left}
+	img.alignleft {margin: 0 25px 25px 0;}
+	img.alignright {margin: 0 0 25px 25px;}
+	.aligncenter {margin: 25px auto;display:block;}
